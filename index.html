@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="landing">
         <nav>
             <div class="nav__container">
                 <img class="logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Treact Logo">
+                <div class="logo-container">
+                    <h2 class="nav__title">Treact</h2>
+                </div>
                 <ul class="nav__links--list">
                     <li class="nav__link--list">
                         <a href="#languages" class="
@@ -46,9 +49,9 @@
                     <li>
                      <a href="#signup"class="
                      nav__link--anchor
-                     nav__link--anchor-secondary
+                     nav__link--anchor-primary
                      ">
-                    <button class="btn">Sign Up</button>
+                    <button class="signup-btn">Sign Up</button>
                         </a>
                     </li>
                 </ul>
@@ -56,23 +59,35 @@
         </nav>
     <header>
         <div class="header__container">
+            <div class="left">
             <div class="header__text--container">
-                <h1 class="header__title">Beautiful React Templates<span class="text--purple"> for you.</span></h1>
-                <p class="header__description">Our templates are easy to setup, understand and customize. Fully modular components a variety of pages and components.</p>
-                <div class="header__buttons--container">
-                    <a href="#get-started" class="header__button header__button--primary">Get Started</a>
-                    <figure class="header__img--wrapper">
-                        <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Customer Logos" class="header__img--customers-logos">
-                    </figure>
-                </div>
+                <h1 class="header__title">Beautiful React Templates<span class="text--purple">for you.</span></h1>
+                <p class="header__description">Our templates are easy to setup, understand and customize. Fully modular components a variety of pages and components.</p> 
+                    <section class="get__started--container">
+                        <form class="cta-form">
+                            <input type="email" placeholder="Your E-mail Address" required>
+                        </form>
+            <a href="#get-started" class="get__started--link">
+                <button class="get__started--btn">Get Started</button>
+            </a>
+            </section>
+            <figure>
+                <img class="customers-logo-strip"  src="assets\customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="logo customers-logo-strip">
+            </figure>
+                    
             </div>
-
-
-    </section>
-                
+            </div>
+            
+            <div class="right">
+                <figure class="header__img--wrapper">
+                    <img  class="header__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Header Illustration">
+                </figure>
+                </div>
+                </div>
+            
             </div>
         </div>
-        </section>
+        
     </header>
 
 </body>
