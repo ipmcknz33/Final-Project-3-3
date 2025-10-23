@@ -165,7 +165,7 @@ p {
     font-weight: 700;
 }
 
-.customer-logo-strip {
+.customer__logo {
     width: 100%;
     max-width: 500px;
     opacity: 0.5;
