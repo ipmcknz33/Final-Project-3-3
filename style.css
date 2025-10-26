@@ -42,6 +42,9 @@ nav {
     padding: 10px 20px;
 }
 
+img {
+    width: 100%;
+}
 .signup-btn {
     background-color: #6030b1;
     color: #FFF;
@@ -189,4 +192,99 @@ p {
     width: 100%;
     height: auto;
     
+}
+
+/* 
+
+FEATURES
+
+*/
+
+#features  {
+    padding: 60px 20px;
+}
+
+.container {
+     display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.container .section__title,
+.section__description {
+    width: 100%;
+}
+
+.container .section__title {
+    align-items: center;
+    padding: 20px 0 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section__description {
+    color: #606f85;
+    font-size: 16px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+.purple--text {
+    color: #6030b1;
+}
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+}
+
+.section__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sercive {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.service__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.services__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+}
+
+.section__description {
+    
+    line-height: 1.5;
+    margin-bottom: 40px;  
+
+}   
+
+.service__img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 72px;
+}
+
+.service__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 20px 16px;   
 }
