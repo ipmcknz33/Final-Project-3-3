@@ -218,6 +218,11 @@ FEATURES
     margin: 0 auto 40px auto;
 }
 
+.section__title {
+    display: flex;
+    justify-content: center;  
+}
+
 /* 
 
 SERVICE SECTION 
@@ -228,31 +233,32 @@ SERVICE SECTION
     color: #6030b1;
 }
 
-#service .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+#services  { 
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    position: relative;
     margin: 0 auto;
 }
 
 
-.section__title {
-    display: flex;
-    justify-content: center;  
-}
-
 .service {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
 }
+
+.service__img {
+    width: 100%;
+    max-width: 100px;
+}   
 
 .service__list {
     display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    padding: 0px 50px;
     width: 100%;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .service__description {
@@ -262,8 +268,8 @@ SERVICE SECTION
     margin-bottom: 10px;  
 }
 
+
 .service__img--wrapper {
     display: flex;
-    padding: 20px 10px;
-      
+    justify-content: center;
 }
