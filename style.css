@@ -36,13 +36,13 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
    
-    color: black;
+    color: #243E63;
     text-align: center;
     line-height: 1.25;
 }
 
 h1 {
-    font-family: ;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
 
@@ -90,7 +90,11 @@ img {
     color: #6030b1;
 }
 
-/* NAVIGATION BAR */
+/*
+
+NAVIGATION BAR
+
+*/
 
 
 .nav__title {
@@ -124,7 +128,11 @@ img {
 }
 
 
-/*header*/
+/*
+
+HEADER SECTION
+
+*/
 
 .header__container {
     display: flex;  
@@ -136,12 +144,13 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .left {
-    width: 40%;
+    width: 50%;
     text-align: left;
 }
 .right {
-    width: 60%;
+    width: 50%;
 }
 
 .header__title {
@@ -210,15 +219,10 @@ FEATURES
 
 */
 
-#features .  {
-   padding: 80px 0;
-}
-
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -267,51 +271,57 @@ SERVICE SECTION
 .text-purple {
     color: #6030b1;
 }
+ #services { 
+     background-color: #f9f9f9;
+     padding: 80px 0;
 
-#services .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
+ }
 
 .service {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-between;
     margin-bottom: 40px;
-    gap: 10px;
     width: calc(100% / 3);
     max-width: 300px;
 }
 
-img.service {
-    border-radius: 50%;
-     border: 1px solid rgb(202, 213, 235);
-     object-fit: cover;
+.service__img--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
-.service img {
+.service__img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
     width: 40px;
     height: 40px;
-    object-fit: contain;
 }   
 
 .service__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
     font-weight: 700;
 }
 
+.service__list--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
 .service__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     color:  #606f85;
     position: relative;
     font-weight: 700;
@@ -321,8 +331,95 @@ img.service {
 }
 
 
-.service__img--wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+ /*
+ 
+ QUALITY SECTION
+
+ */
+
+#quality {
+    padding: 80px 0;
+    background-color: #fff;
 }
+
+.quality__container {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center; 
+    gap: 48px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Left {
+    width: 50%;
+    text-align: left;
+}
+
+.right {
+    width: 50%;
+}
+
+.right .dot-grid {
+    display: block;
+    grid-template-columns: repeat(10,8px);
+    grid-template-rows: repeat(10,8px);
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 10px;
+    height: 10px;
+    background-image: radial-gradient(#6030b1 2px, transparent 2px);
+    background-size: 10px 10px;
+    position: relative;
+    bottom-right: -20px;
+    z-index: -1;
+}
+.quality__title {
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 32px;
+    line-height: 1.25;
+}
+
+.quality__subtitle {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 32px;
+    line-height: 1.25;
+}
+
+.quality__description {
+    text-align: left;
+    margin-bottom: 32px;
+    font-size: 18px;
+    color: #606f85;
+    
+}
+
+.learn__more--btn {
+    background-color: #6030b1;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.learn__more--btn:hover {
+    background-color: #4e27a0;
+    color: #fff;
+}
+
+.quality__img {
+    width: 100%;
+    height: auto;
+}
+
+
