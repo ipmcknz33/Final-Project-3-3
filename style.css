@@ -362,6 +362,7 @@ SERVICE SECTION
 }
 
 .Left {
+    margin-top: 30px;
     width: 50%;
     text-align: left;
 }
@@ -380,7 +381,7 @@ SERVICE SECTION
     padding: 40px;
     width: 10px;
     height: 10px;
-    background-image: radial-gradient(#6030b1 2px, transparent 2px);
+    background-image: radial-gradient(#8cb5eb 2px, transparent 2px);
     background-size: 10px 10px;
     position: relative;
     z-index: 1;
@@ -443,12 +444,9 @@ SERVICE SECTION
     
 }
 
-.row {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}   
+.steps__container {
+    display: flex;  
+}
 
 .Left {
     width: 50%;
@@ -467,18 +465,18 @@ SERVICE SECTION
 }
 
 .dot-grid {
-    display: block;
-    grid-template-columns: repeat(10,8px);
-    grid-template-rows: repeat(10,8px);
+    grid-template-columns: repeat(10,10px);
+    grid-template-rows: repeat(10,10px);
     gap: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    width: 10px;
-    height: 10px;
-    background-image: radial-gradient(#6030b1 2px, transparent 2px);
-    background-size: 10px 10px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    padding: 60px;
+    width: 50px;
+    height: 8px;
+    background-image: radial-gradient(#8cb5eb 2px, transparent 2px);
+    background-size: 20px 20px;
+    position: relative;
     z-index: 1;
 }
 
@@ -488,44 +486,46 @@ SERVICE SECTION
 }
 
 .steps__list--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 32px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin: 0;
 }
 .steps__description {
-    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1rem;
     color: #606f85; 
 }
 .step {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 16px; 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
 }
 
 .step__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
     margin: 20px 0;
 }
 
 .step__number {
-    align-self: start;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 56px;
+    height: 77px;
+    border-radius: 8px;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 500;
     color: #a6a7a8;
 
 }
 
-.ul {
-    list-style: none;
-}
 
-.li  {
-    display: flex;
-    align-items: center;
-}
 
