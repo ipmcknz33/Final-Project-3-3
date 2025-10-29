@@ -25,6 +25,7 @@ p {
     font-weight: 700;
     color:#606f85
 }
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -34,8 +35,7 @@ p {
     padding: 80px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-   
+h1, h2, h3, h5, h6 {
     color: #243E63;
     text-align: center;
     line-height: 1.25;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 36px;
 
 }
@@ -221,12 +221,10 @@ FEATURES
 
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding:  28px;
+    padding:  80px;
 }
 
 .container .section__title {
@@ -239,7 +237,7 @@ FEATURES
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #606f85;
+    color: #9ea9b9;
     font-size: 16px;
     max-width: 600px;
     margin: 0 auto;
@@ -273,34 +271,31 @@ SERVICE SECTION
 }
 
 #services { 
-     background-color: #f9f9f9;
      padding: 80px 0;
 
  }
 
 .service {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-    padding: 20px;
     width: calc(100% / 3);
     max-width: 400px;
 }
 
 .service__img--wrapper {
     display: flex;
-    justify-content: space-between;
-    padding: auto;
 }
 
 .service__img {
     display: flex;
-    justify-content: space-between;
-    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 100px;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    border: 1px solid #d4dbe9;
+    object-fit: cover;
 }   
 
 .service__list {
@@ -312,14 +307,12 @@ SERVICE SECTION
 .service__list--container {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    padding-bottom: 20px;
+    padding: 20px;
     
 }
 
 .service__description {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     color:  #606f85;
@@ -328,6 +321,7 @@ SERVICE SECTION
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 10px;  
+    padding: 50px;
 }
 
 
@@ -342,6 +336,11 @@ SERVICE SECTION
     background-color: #fff;
 }
 
+.quality {
+    position: relative;
+    overflow: visible;
+}
+
 .quality__container {
     display: flex;  
     justify-content: space-between;
@@ -352,6 +351,14 @@ SERVICE SECTION
     margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.quality__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
 }
 
 .Left {
@@ -363,7 +370,7 @@ SERVICE SECTION
     width: 50%;
 }
 
-.right .dot-grid {
+.dot-grid {
     display: block;
     grid-template-columns: repeat(10,8px);
     grid-template-rows: repeat(10,8px);
@@ -376,14 +383,13 @@ SERVICE SECTION
     background-image: radial-gradient(#6030b1 2px, transparent 2px);
     background-size: 10px 10px;
     position: relative;
-    bottom-right: -20px;
-    z-index: -1;
+    z-index: 1;
 }
 .quality__title {
-    font-weight: 700;
+    font-weight: 900;
     text-align: left;
     margin-bottom: 32px;
-    line-height: 1.25;
+    line-height: 1;
 }
 
 .quality__subtitle {
@@ -417,9 +423,78 @@ SERVICE SECTION
     color: #fff;
 }
 
-.quality__img {
-    width: 100%;
-    height: auto;
+ /*
+ 
+ STEPS SECTION
+
+ */
+
+#steps {
+    display: flex;
+    padding: 80px 0; 
 }
 
+.container {
+    display: flex; 
+    gap: 48px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+
+.Left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.labtop__img {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.dot-grid {
+    display: block;
+    grid-template-columns: repeat(10,8px);
+    grid-template-rows: repeat(10,8px);
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 10px;
+    height: 10px;
+    background-image: radial-gradient(#6030b1 2px, transparent 2px);
+    background-size: 10px 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.steps__description {
+    margin-bottom: 32px;
+    font-size: 18px;
+    color: #606f85;
+    
+}
+.ul {
+    margin-bottom: 16px;
+}
+
+.li  {
+    font-size: 16px;
+    color: #243E63;
+    text-decoration: none;
+}
 
