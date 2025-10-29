@@ -553,21 +553,20 @@ VALUES SECTION
     
 }
 
-.principles--content {
+.principlescontent {
     display: flex;
     gap: 48px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 0;
-    
 }
 
 .principles--content .Left {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 0 32px;
+   
 }
 .principles--content .right {
     display: flex;
