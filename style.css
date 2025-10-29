@@ -543,33 +543,47 @@ VALUES SECTION
     display: flex;
 }
 
-.priciples__container {
+.principles__container {
     display: flex; 
     gap: 48px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 0;
+    margin: 0 auto; 
+}
+.affordable--title {
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
-.principlescontent {
+.principles__discription {
     display: flex;
-    gap: 48px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 0;
+    flex-wrap: wrap;
+    padding: 10px;
 }
+.icons{
+    display: flex;
+    
+}
+.icon {
+    display: flex;
+    padding: 10px;
+ }
 
-.principles--content .Left {
+.Left {
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding: 10px;
+    margin:  0;
    
 }
-.principles--content .right {
-    display: flex;
+
+.learn__more--btn {
+    margin: 10px;
+}
+
+.right {
     width: 50%;
   
 }
@@ -578,6 +592,7 @@ VALUES SECTION
     width: 100%;
     height: auto;
 }
+
 
 
 
