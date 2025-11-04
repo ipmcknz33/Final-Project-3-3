@@ -361,6 +361,7 @@ SERVICE SECTION
 
 .service {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: calc(100% / 3);
     max-width: 400px;
@@ -385,6 +386,8 @@ SERVICE SECTION
 .service__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -396,7 +399,7 @@ SERVICE SECTION
 }
 
 .service__description {
-    display: flex;
+   
     flex-direction: column;
     align-items: center;
     color:  #606f85;
@@ -405,7 +408,7 @@ SERVICE SECTION
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 10px;  
-    padding: 50px;
+ 
 }
 
 
@@ -445,15 +448,15 @@ SERVICE SECTION
     z-index: 2;
 }
 
-.Left {
-    margin-top: 30px;
-    width: 50%;
+.quality__left {
+    width: 50%; 
     text-align: left;
 }
 
-.right {
-    width: 50%;
-}
+.quality__right { 
+  width: 50%; 
+
+  }
 
 .dot-grid {
     display: block;
@@ -920,21 +923,22 @@ PRICING
     color: #fff;
 }
 .business-plan .buy-button {
-    background-color: #f7a2b9; /* Pink button */
+    background-color: #f7a2b9; 
     color: #3f3f46;
 }
+
 .business-plan:hover {
-    transform: translateY(-25px); /* Lift further on hover */
+    transform: translateY(-25px);
 }
 
-/* Enterprise Plan (Red accent) */
+
 .enterprise-plan .card-header {
     background-color: #fff;
-    border-top: 5px solid #f68798; /* Pink/Red top border */
+    border-top: 5px solid #f68798; 
     color: #3f3f46;
 }
 .enterprise-plan .buy-button {
-    background-color: #f68798; /* Pink/Red button */
+    background-color: #f68798;
 }
 
 /* --- Buy Button Styling --- */
@@ -943,7 +947,7 @@ PRICING
     width: 80%;
     margin: 0 auto;
     padding: 10px 20px;
-    border-radius: 9999px; /* Pill shape */
+    border-radius: 9999px; 
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -951,10 +955,10 @@ PRICING
 }
 
 .buy-button:hover {
-    filter: brightness(1.1); /* Slight hover effect */
+    filter: brightness(1.1); 
 }
 
-/* --- Media Query for Responsiveness --- */
+
 @media (max-width: 900px) {
 .pricing-cards {
         flex-direction: column;
@@ -964,7 +968,7 @@ PRICING
         margin-bottom: 20px;
     }
 .business-plan {
-        transform: translateY(0); /* Remove lift on small screens */
+        transform: translateY(0); 
     }
 .business-plan:hover {
         transform: translateY(-5px); 
@@ -1330,7 +1334,6 @@ FOOTER
     
     
     .dot-grid,
-    .quality__img,
     .labtop__img,
     .service__img--wrapper,
     .service__img,
@@ -1369,18 +1372,11 @@ FOOTER
         margin-bottom: 24px;
     }
 
-    .quality__description {
-        padding: 0 45px;
-    } 
-
     .step__list--description
-    .quality__description
     .header__description
     .service__description {
-        /* If the description text is overflowing, it is likely because its own parent
-           is restricted or the text is in a fixed-width container. */
-        padding: 0 10px; /* Adjust padding to give the text room to wrap */
-        word-wrap: break-word; /* Ensures long words break if necessary */
+        padding: 0 10px; 
+        word-wrap: break-word; 
     }
 }
 
@@ -1390,7 +1386,6 @@ FOOTER
     } 
     
     .dot-grid,
-    .quality__img,
     .labtop__img,
     .service__img--wrapper,
     .service__img,
@@ -1414,16 +1409,16 @@ FOOTER
          
             h2 {
             font-size: 1.5rem;
-        }
+            }
     
-        h3 {
+             h3 {
             font-size: 1.25rem;}
     
-        h4 {
+             h4 {
                 font-size: 1.1rem;
             }
 
-            .quality__container,
+            
             .cta-bar__buttons,
             .footer__container,
             .service,
@@ -1437,8 +1432,8 @@ FOOTER
             
             .step__list { 
                 padding: 0 50px;
-                width: 100%; /* CRITICAL FIX: Forces each item to a new line */
-                margin-bottom: 25px; /* Adds spacing between stacked items */
+                width: 100%; 
+                margin-bottom: 25px;
             }
             
             .quality__description {
@@ -1450,7 +1445,6 @@ FOOTER
                 padding: 0 10px;
                 
             }
-            
             
             .step__list,
             .header__description,
