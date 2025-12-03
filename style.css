@@ -56,8 +56,9 @@ nav {
     padding: 10px 20px;
 }
 
-img {
-    width: 100%;
+.feature__img {
+    width: 24px;
+    height: 24px;
 }
 
 button {
@@ -654,7 +655,7 @@ VALUES SECTION
 }
 
 .prototype__img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -951,23 +952,6 @@ PRICING
 
 .buy-button:hover {
     filter: brightness(1.1); 
-}
-
-
-@media (max-width: 900px) {
-.pricing-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-.plan-card {
-        margin-bottom: 20px;
-    }
-.business-plan {
-        transform: translateY(0); 
-    }
-.business-plan:hover {
-        transform: translateY(-5px); 
-    }
 }
 
 /* 
@@ -1289,6 +1273,56 @@ FOOTER
 }
 
 
+@media (max-width: 1024px){
+    .feature{
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+.pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+.plan-card {
+        margin-bottom: 20px;
+    }
+.business-plan {
+        transform: translateY(0); 
+    }
+.business-plan:hover {
+        transform: translateY(-5px); 
+    }
+    /*new code*/
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .right {
+        width: auto;
+    }
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .get__started--container {
+        display: flex;
+        flex-direction: column;
+    }
+    .get__started--container input {
+        border-radius: 50px;
+    }
+    .get__started--btn {
+        margin-top: 1rem;
+        border-radius: 50px;
+    }
+    .customers-logo-strip {
+       width: 100%;
+    }
+}
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
@@ -1313,8 +1347,34 @@ FOOTER
     .book {
         width: 50%;
     }
+
     .img {
         display: none;
+    }
+    .principles__row {
+        flex-direction: column-reverse;
+    }
+    .principles__group {
+        flex-direction: column;
+    }
+    .principle__header {
+        justify-content: center;
+    }
+    .feature {
+        width: auto;
+    }
+    .quality__container {
+        flex-direction: column-reverse;
+    }
+    .steps__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials__row {
+        flex-direction: column;
+    }
+    .quality__right {
+        width: 100%;
     }
 }
 
